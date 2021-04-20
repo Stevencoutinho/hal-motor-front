@@ -26,6 +26,14 @@ export const Themes = {
     color: '#FFFFFF',
     backgroundColor: '#F2C94C',
   },
+  halmotor: {
+    color: '#FFFFFF',
+    backgroundColor: '#E16B6B',
+  },
+  disabled: {
+    color: "#FFFFFF",
+    backgroundColor: "#d5d5d5",
+  }
 };
 
 // Size
@@ -34,7 +42,7 @@ export const Sizes = {
     small: '128px',
     medium: '160px',
     large: '192px',
-  },
+  }
 };
 
 // Mixin

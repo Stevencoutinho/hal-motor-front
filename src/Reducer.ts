@@ -1,10 +1,26 @@
 /* myTypes */
-import { GlobalState, Action } from '@/types';
+import { GlobalState, Actions } from '@/types';
 
-export const reducer = (state: GlobalState, action: Action): GlobalState => {
+export const reducer = (state: GlobalState, action: Actions): GlobalState => {
   switch(action.type) {
-    case "TEST":
-      return { name: action.payload.name };
+    case "LOGIN":
+      return {
+        ...state,
+        user: {
+          id: action.payload.id,
+          name: action.payload.name
+        }
+      };
+    case "CAR":
+      return {
+        ...state,
+        cars: action.payload
+      }
+    case "DAYSET":
+      return {
+        ...state,
+        nextAuctionDay: action.payload
+      }
     default:
       return { ...state };
   }

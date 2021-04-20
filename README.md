@@ -1,6 +1,5 @@
-# ts-react-boilerplate
-以前作成したreactのボイラプレートにtypescriptを導入しました。<br>
-今後も随時ブラッシュアップしていきます。
+# hal-motor-front
+HAL MOTOR のフロントエンドです。
 ## Scripts
 ### Install
 ```

@@ -8,13 +8,14 @@ interface Props {
 
 /* DOM */
 const Component: React.FC<Props> = (props): JSX.Element => {
-  const {className: cn} = props;
-  return <footer>footer</footer>;
+  const cn = props.className;
+  return <footer className={cn}>footer</footer>;
 };
 
 /* style */
 const StyledComponent = styled(Component)<Props>`
   color: red;
+  border: solid red 1px;
 `;
 
 /* container */

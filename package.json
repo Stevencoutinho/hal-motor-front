@@ -1,15 +1,14 @@
 {
-  "name": "ts-react-boilerplate",
+  "name": "hal-motor-front",
   "version": "1.0.0",
-  "description": "TypeScript + React boilerplate",
+  "description": "hal motor front",
   "main": "index.tsx",
-  "repository": "https://github.com/Stevencoutinho/ts-react-boilerplate.git",
+  "repository": "https://github.com/Stevencoutinho/hal-motor-front",
   "bugs": "",
   "author": "Kazuya ISHIBASHI <1484kazuya12@gmail.com> (https://github.com/Stevencoutinho)",
   "keywords": [
     "React",
-    "TypeScript",
-    "template"
+    "TypeScript"
   ],
   "license": "MIT",
   "scripts": {
@@ -21,6 +20,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "axios": "^0.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

@@ -2,8 +2,8 @@
 import React from "react";
 import styled from "styled-components";
 /* organisms */
-import Header from "@/src/components/03_organisms/Header";
-import Footer from "@/src/components/03_organisms/Footer";
+import Header from "../03_organisms/Header";
+import Footer from "../03_organisms/Footer";
 /* utils */
 import { HeaderHeight, FooterHeight } from "@/src/utils/theme";
 // /* type */
@@ -13,19 +13,21 @@ import { HeaderHeight, FooterHeight } from "@/src/utils/theme";
 
 /* DOM */
 const Layout: React.FC = ({children}): JSX.Element => {
-
   return (
     <>
-    <Header />
-    <Main>{children}</Main>
-    <Footer />
+      <Header />
+      <Main>{children}</Main>
+      {/* <Footer /> */}
     </>
   );
 };
 
 /* style */
 const Main = styled.main`
-  min-height: calc(100vh - ${HeaderHeight} - ${FooterHeight});
+  dl dt {
+    font-weight: normal;
+  }
+  /* min-height: calc(100vh - ${HeaderHeight} - ${FooterHeight}); */
 `;
 
 /* export */
